@@ -8,7 +8,7 @@ describe('Testing createContact', function() {
 	var number = "+5162444385";
 
 	it('properly calls the api', function() {
-		createContact(name, number).then(console.log, console.error);
+		createContact(name, number).then(callbackHandler, console.error);
 	});
 	it('creates a contact named ' + name + ' with number ' + number, function() {
 		//help
