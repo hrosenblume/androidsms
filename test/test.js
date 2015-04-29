@@ -14,3 +14,7 @@ describe('Testing createContact', function() {
 		//help
 	});
 });
+
+function callbackHandler(res){
+  console.log(res);
+}
