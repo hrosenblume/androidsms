@@ -13,7 +13,6 @@ var sample_contact = {
 describe('Testing createContact', function() {
 	this.timeout(3000);
 
-<<<<<<< HEAD
 	it('properly posts to the api', function(done) {
 		androidSMS.createContact(sample_contact.name, sample_contact.number, function(val, err) {
 			if (err) throw(err);
@@ -26,16 +25,5 @@ describe('Testing createContact', function() {
 		  		done(e); 
 		  	}
 		});
-=======
-	it('properly calls the api', function() {
-		createContact(name, number).then(callbackHandler, console.error);
-	});
-	it('creates a contact named ' + name + ' with number ' + number, function() {
-		//help
->>>>>>> 2f6306e36f644d36b3bf61463d361f025b7af835
 	});
 });
-
-function callbackHandler(res){
-  console.log(res);
-}
